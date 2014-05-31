@@ -1,0 +1,180 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  background-color: #FFF;
+  font: 13.34px Helvetica, Arial, sans-serif;
+  font-size: small;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+p { margin: 1em 0; }
+
+a         { color: #00a; }
+a:hover   { color: #000; }
+a:visited { color: #a0a; }
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 42em;
+  margin: 3em auto 2em;
+  line-height: 1.5em;
+}
+
+.header h1 {
+  font-size: 120%;
+}
+
+.header a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul.navigation {
+  list-style-type: none;
+  margin: 0 0 2em 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 4px solid #eee;
+  font-size: 115%;
+}
+
+li.nav_item {
+  float: left;
+}
+
+li.nav_item a {
+  display: block;
+  margin-right: 3em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.title {
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+.title a {
+  color: #a00;
+}
+
+.title a:hover {
+  color: #000;
+}
+
+.header a.extra {
+  color: #aaa;
+  margin-left: 1em;
+}
+
+.header a.extra:hover {
+  color: #000;
+}
+
+#home h2 a {
+  color: #333;
+}
+
+.meta {
+  color: #aaa;
+}
+
+.footer {
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+
+.footer .contact a {
+  color: #8085C1;
+}
+
+.footer .rss {
+  margin-top: 1.1em;
+  margin-right: -.2em;
+  float: right;
+}
+
+.footer .rss img {
+  border: 0;
+}
+
+ul.book-list {
+  list-style-type: none;
+  list-style: none;
+}
+
+.book {
+  overflow: hidden;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.book .poster {
+  float: left;
+  width: 80px;
+  text-align: right;
+}
+
+.book .poster IMG {
+  display: inline-block;
+  margin: 2px;
+  max-width: 80px;
+}
+
+.book .info {
+  display: inline-block;
+  width: 80%;
+  margin-left: 1.2em;
+}
+
+.book .info .book-title {
+  font-size: 16pt;
+}
+
+.book .info .author {
+  font-size: 11pt;
+  color: #666;
+}
+
+.book .info .content {
+  margin: 1em 0 0 1em;
+}
+
+.book .info .date {
+  color: #666;
+}

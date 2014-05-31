@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div id="home">
+  <h2 class="header"><a href="reading.html">Reading</a></h2>
+    {% include books.html param='reading' %}
+  <br/>
+  <h2 class="header"><a href="want.html">Want read</a></h2>
+    {% include books.html param='want' %}
+  <br/>
+  <h2 class="header"><a href="done.html">Done</a></h2>
+    {% include books.html param='done' %}
+</div>

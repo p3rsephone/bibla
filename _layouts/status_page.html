@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div id="home">
+  <ul class="book-list">
+    {% for book in page.books %}
+    <li class="book">
+      <div class="poster">
+        <a href="{{ book.link }}">
+          <img src="/images/{{ book.image }}">
+        </a>
+      </div>
+      <div class="info">
+        <h2 class="book-title">{{ book.title }}</h2>
+        <h3 class="author">{{ book.author }}</h3>
+        <div class="content">
+          {% if book.started %}
+          <div class="date">Started: {{ book.started }}</div>
+          {% endif %}
+          {% if book.finished %}
+          <div class="date">Finished: {{ book.finished }}</div>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
