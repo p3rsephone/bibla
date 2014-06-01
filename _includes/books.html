@@ -3,9 +3,13 @@
   {% for book in site.data.books %}
     {% if book.status == include.param and counter <= 5 %}
     <li>
+      {% if book.link %}
       <a href="{{ book.link }}">
+      {% endif %}
         <b>{{ book.title }}</b>. {{ book.author }}
+      {% if book.link %}
       </a>
+      {% endif %}
     </li>
     {% assign counter = counter | plus: 1 %}
     {% endif %}

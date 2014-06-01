@@ -3,12 +3,12 @@ layout: default
 ---
 
 <div id="home">
-  <h2 class="header"><a href="reading.html">Reading</a></h2>
-    {% include books.html param='reading' %}
+  <h2 class="header"><a href="now.html">Reading now</a></h2>
+    {% include books.html param='now' %}
+  <br/>
+  <h2 class="header"><a href="read.html">Read</a></h2>
+    {% include books.html param='read' %}
   <br/>
   <h2 class="header"><a href="want.html">Want read</a></h2>
     {% include books.html param='want' %}
-  <br/>
-  <h2 class="header"><a href="done.html">Done</a></h2>
-    {% include books.html param='done' %}
 </div>

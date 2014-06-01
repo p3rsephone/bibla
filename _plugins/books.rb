@@ -16,7 +16,7 @@ module Jekyll
   class StatusPageGenerator < Generator
     safe true
     def generate(site)
-      ["reading", "done", "want"].each do |status|
+      ["now", "read", "want"].each do |status|
         p = StatusPage.new(site, status)
         site.pages << p
       end
