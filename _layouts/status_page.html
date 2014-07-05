@@ -9,11 +9,7 @@ layout: default
         {% if book.link %}
         <a href="{{ book.link }}">
         {% endif %}
-          {% if book.image %}
-          <img src="/images/{{ book.image }}">
-          {% else %}
-          <img src="/images/noimage.jpg">
-          {% endif %}
+          <img src="{{ book.image }}">
         {% if book.link %}
         </a>
         {% endif %}

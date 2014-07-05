@@ -7,8 +7,16 @@ module Jekyll
       @dir = '/'
       self.process(@name)
       self.read_yaml(File.join(@base, '_layouts'), 'status_page.html')
-      books = YAML.load(File.read(File.join(@base, '_data/books.yaml')))
+      books = YAML.load(File.read("books/books.yaml"))
       self.data['books'] = books.find_all {|b| b["status"] == status}
+      self.data['books'].each do |b|
+        if b['image'].nil?
+          b['image'] = "books/images/noimage.jpg"
+        else
+          b['image'] = "books/images/#{b['image']}"
+        end
+      end
+      site.data[status] = self.data['books']
       self.data['title'] = "#{site.config['name']}: #{status.capitalize}"
     end
   end

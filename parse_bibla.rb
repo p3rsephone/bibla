@@ -51,7 +51,7 @@ class Book
   end
 end
 
-options = {:out => "_data/books.yaml", :force => false}
+options = {:out => "books.yaml", :force => false}
 
 OptionParser.new do |opts|
   opts.banner = "Usage: ./parse_bibla.rb [options]"
@@ -59,7 +59,7 @@ OptionParser.new do |opts|
   opts.on('-u', '--user USER', 'username on bibla.ru') do |user|
     options[:user] = user
   end
-  opts.on('-o', '--out FILE', 'output file, default: _data/books.yaml') do |out|
+  opts.on('-o', '--out FILE', 'output file, default: books.yaml') do |out|
     options[:out] = out
   end
   opts.on('-f', '--force', 'overwrite output file, default: false') do
