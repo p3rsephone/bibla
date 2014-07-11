@@ -17,7 +17,7 @@ jekyll serve
 
 books.yaml format
 -----------------
-Is pretty simple:
+It's pretty simple:
 ```
 - title: More Money Than God
   author: Sebastian Mallaby
