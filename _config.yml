@@ -1,5 +1,5 @@
 name: Ivan's books
 markdown: redcarpet
-pygments: true
-exclude: [Readme.md, parse_bibla.rb]
+highlighter: pygments
+exclude: [Readme.md, parse_bibla.rb, books/books.yaml]
 
